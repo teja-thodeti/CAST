@@ -1,7 +1,7 @@
 # YouTube Clone (HTML + CSS)
 
 A simple YouTube-inspired homepage built using only **HTML** and **CSS**.  
-Created as part of my web development practice and to learn GitHub integration with VS Code.
+Created as part of my web development practice.
 
 ## 🚀 Features
 - Basic header with logo and search bar
