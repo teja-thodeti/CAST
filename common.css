@@ -3,4 +3,6 @@ p{
  }
 body{
     margin:0;
+    padding-top: 66px;
+    background-color:rgb(243, 243, 243);
 }
