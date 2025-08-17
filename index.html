@@ -8,375 +8,347 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Youtube-clone</title>
-    <style>
-      p{ 
-        font-family: Roboto,Areal;
-            }
-      .search-bar{
-        display:block;
-      }
-      
-      .video-thumbnail{
-        width:100%;
-        display:block;
-      }
-      .video-info-grid{
-        display:grid;
-        grid-template-columns:50px 1fr;
-      }
-     
-      .video-profile{
-        width:30px;
-      }
-      .video-title{
-        margin-top: 0;
-        margin-bottom:5px;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        
-      }
-      .thumbnail-row{
-        margin-bottom:10px;
-      }
-      .video-author{
-        font-size:12px;
-        color:rgb(96,96,96);
-        margin-bottom:4px;
-        margin-top:5px
-      }
-
-      .video-stats{
-        font-size:12px;
-        color:rgb(96,96,96);
-        margin-top:0px;
-      }
-      .video-grid{
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        column-gap:15px;
-
-
-      }
-      
-    </style>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="video.css">
 </head>
 
 <body>
-  <input class="search-bar" type="text" placeholder="Search">
-<div class="video-grid">
-  <!--1 kalki video Container-->
-  <div class="video-preview">
-
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-kalki.avif">
+  <div class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="icons/icon-hamburger.svg">
+      <img class="youtube-logo" src="icons/icon-youtubelogo.svg">
     </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-kalki.jpg">
-      </div>
-
-      <div class="video-info">
-        <p class="video-title">
-        The Story of Ashwatthama's Curse | Kalki 2898 AD |
-        </p>
-        <p class="video-author">
-          Netflix &#10003;
-        </p>
-        <p class="video-stats">
-          1M views &#183; 17 hours ago
-        </p>
-      </div> 
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="icons/icon-search">
+      </button>
+      <button class="voice-button">
+        <img src="icons/icon-voice">
+      </button>
+    </div>
+    <div class="right-section">
+      <img class="upload-icon" src="icons/icon-upload.svg">
+      <img class="apps-icon" src="icons/icon-apps.svg">
+      <img class="notification-icon" src="icons/icon-notification.svg">
+      <img class="mychannel-icon" src="images/thumbnail-mychannel.svg">
     </div>
   </div>
-  <!--container ends here-->
+  
+  <div class="video-grid">
+    <!--1 kalki video Container-->
+    <div class="video-preview">
 
-   <!--2 japan video Container-->
-  <div class="video-preview">
-
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-japan.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-japan.jpg">
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-kalki.avif">
       </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-kalki.jpg">
+        </div>
 
-      <div class="video-info">
-        <p class="video-title">
-        Japan in 8K ULTRA HD - Land of The Rising Sun (60 FPS)
-        </p>
-        <p class="video-author">
-          8k films
-        </p>
-        <p class="video-stats">
-          7M views &#183; 1 years ago
-        </p>
-      </div> 
-    </div>
-  </div>
-  <!--container ends here-->
-
-  <!--3 wardog video Container-->
-  <div class="video-preview">
-
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-wardog.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-wardog.jpg">
+        <div class="video-info">
+          <p class="video-title">
+          The Story of Ashwatthama's Curse | Kalki 2898 AD |
+          </p>
+          <p class="video-author">
+            Netflix &#10003;
+          </p>
+          <p class="video-stats">
+            1M views &#183; 17 hours ago
+          </p>
+        </div> 
       </div>
-
-      <div class="video-info">
-        <p class="video-title">
-        When A-10 Warthogs Battled to Save A Friend
-        </p>
-        <p class="video-author">
-          Yarnhub
-        </p>
-        <p class="video-stats">
-          785k views &#183; 10 years ago
-        </p>
-      </div> 
     </div>
-  </div>
-  <!--container ends here-->
+    <!--container ends here-->
 
-   <!--4 cold video Container-->
-  <div class="video-preview">
+    <!--2 japan video Container-->
+    <div class="video-preview">
 
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-cold.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-cold.jpg">
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-japan.avif">
       </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-japan.jpg">
+        </div>
 
-      <div class="video-info">
-        <p class="video-title">
-        One Day in the Coldest Village on Earth −71°C (−95°F) | Yakutia, Siberia
-        </p>
-        <p class="video-author">
-          Kuin B
-        </p>
-        <p class="video-stats">
-          19M views &#183; 3 months ago
-        </p>
-      </div> 
-    </div>
-  </div>
-  <!--container ends here-->
-
-  <!--5 red gta video Container-->
-  <div class="video-preview">
-
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-gta.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-gta.jpg">
+        <div class="video-info">
+          <p class="video-title">
+          Japan in 8K ULTRA HD - Land of The Rising Sun (60 FPS)
+          </p>
+          <p class="video-author">
+            8k films
+          </p>
+          <p class="video-stats">
+            7M views &#183; 1 years ago
+          </p>
+        </div> 
       </div>
-
-      <div class="video-info">
-        <p class="video-title">
-          Grand Theft Auto VI Trailer
-        </p>
-        <p class="video-author">
-          PS5 &#10003;
-        </p>
-        <p class="video-stats">
-          2.8M views &#183; 1 year ago
-        </p>
-      </div> 
     </div>
-  </div>
-  <!--container ends here-->
+    <!--container ends here-->
 
-   <!--6 deadpool video Container-->
-  <div class="video-preview">
+    <!--3 wardog video Container-->
+    <div class="video-preview">
 
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-deadpool.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-deadpool.jpg">
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-wardog.avif">
       </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-wardog.jpg">
+        </div>
 
-      <div class="video-info">
-        <p class="video-title">
-        Bye Bye Bye Opening Scene |DEADPOOL & WOLVERINE (2024) Movie CLIP HD
-        </p>
-        <p class="video-author">
-          JoBie
-        </p>
-        <p class="video-stats">
-          39M views &#183; 9 months ago
-        </p>
-      </div> 
-    </div>
-  </div>
-  <!--container ends here-->
-
-    <!--7 Tomclancy video Container-->
-  <div class="video-preview">
-
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-tomclancy.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-tomclancy.jpg">
+        <div class="video-info">
+          <p class="video-title">
+          When A-10 Warthogs Battled to Save A Friend
+          </p>
+          <p class="video-author">
+            Yarnhub
+          </p>
+          <p class="video-stats">
+            785k views &#183; 10 years ago
+          </p>
+        </div> 
       </div>
-
-      <div class="video-info">
-        <p class="video-title">
-          Tom Clancy’s Ghost Recon Wildlands Reveal Trailer – E3 2015 [Europe]
-        </p>
-        <p class="video-author">
-          Ubisoft &#10003;
-        </p>
-        <p class="video-stats">
-          17M views &#183; 10years ago
-        </p>
-      </div> 
     </div>
-  </div>
-  <!--container ends here-->
+    <!--container ends here-->
 
-   <!--8 aws video Container-->
-  <div class="video-preview">
+    <!--4 cold video Container-->
+    <div class="video-preview">
 
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-aws.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-aws.jpg">
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-cold.avif">
       </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-cold.jpg">
+        </div>
 
-      <div class="video-info">
-        <p class="video-title">
-        WS In 5 Minutes | What Is AWS? | AWS Tutorial For Beginners | AWS Training | Simplilearn
-        </p>
-        <p class="video-author">
-          JoBie
-        </p>
-        <p class="video-stats">
-          39M views &#183; 9 months ago
-        </p>
-      </div> 
-    </div>
-  </div>
-  <!--container ends here-->
-
-  <!--9 goolge video Container-->
-  <div class="video-preview">
-
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-google.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-google.jpg">
+        <div class="video-info">
+          <p class="video-title">
+          One Day in the Coldest Village on Earth −71°C (−95°F) | Yakutia, Siberia
+          </p>
+          <p class="video-author">
+            Kuin B
+          </p>
+          <p class="video-stats">
+            19M views &#183; 3 months ago
+          </p>
+        </div> 
       </div>
-
-      <div class="video-info">
-        <p class="video-title">
-          Inside a Google data center
-        </p>
-        <p class="video-author">
-          Google WorkSpace &#10003;
-        </p>
-        <p class="video-stats">
-          2M views &#183; 11 months ago
-        </p>
-      </div> 
     </div>
-  </div>
-  <!--container ends here-->
+    <!--container ends here-->
 
-   <!--10 tod video Container-->
-  <div class="video-preview">
+    <!--5 red gta video Container-->
+    <div class="video-preview">
 
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-tod.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-tod.jpg">
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-gta.avif">
       </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-gta.jpg">
+        </div>
 
-      <div class="video-info">
-        <p class="video-title">
-        Total Overdose - Full Game Walkthrough
-        </p>
-        <p class="video-author">
-          Aplhayellow
-        </p>
-        <p class="video-stats">
-          9M views &#183; 9 months ago
-        </p>
-      </div> 
-    </div>
-  </div>
-  <!--container ends here-->
-
-  <!--11 Speed video Container-->
-  <div class="video-preview">
-
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-ishowspeed.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-speed.jpg">
+        <div class="video-info">
+          <p class="video-title">
+            Grand Theft Auto VI Trailer
+          </p>
+          <p class="video-author">
+            PS5 &#10003;
+          </p>
+          <p class="video-stats">
+            2.8M views &#183; 1 year ago
+          </p>
+        </div> 
       </div>
-
-      <div class="video-info">
-        <p class="video-title">
-        iShowSpeed's First Day In China!
-        </p>
-        <p class="video-author">
-          Live Speedy &#10003;
-        </p>
-        <p class="video-stats">
-          2.8M views &#183; 4 months ago
-        </p>
-      </div> 
     </div>
-  </div>
-  <!--container ends here-->
+    <!--container ends here-->
 
-   <!--12 red dead redemption video Container-->
-  <div class="video-preview">
+    <!--6 deadpool video Container-->
+    <div class="video-preview">
 
-    <div class="thumbnail-row">
-      <img class="video-thumbnail" src="/images/thumbnail-rdr2.avif">
-    </div>
-    <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="video-profile" src="/channelprofiles/profile-rdr2.jpg">
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-deadpool.avif">
       </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-deadpool.jpg">
+        </div>
 
-      <div class="video-info">
-        <p class="video-title">
-        Red Dead Redemption 2 Trailer
-        </p>
-        <p class="video-author">
-          Rockstar Games
-        </p>
-        <p class="video-stats">
-          39M views &#183; 10 years ago
-        </p>
-      </div> 
+        <div class="video-info">
+          <p class="video-title">
+          Bye Bye Bye Opening Scene |DEADPOOL & WOLVERINE (2024) Movie CLIP HD
+          </p>
+          <p class="video-author">
+            JoBie
+          </p>
+          <p class="video-stats">
+            39M views &#183; 9 months ago
+          </p>
+        </div> 
+      </div>
     </div>
+    <!--container ends here-->
+
+      <!--7 Tomclancy video Container-->
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-tomclancy.avif">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-tomclancy.jpg">
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+            Tom Clancy’s Ghost Recon Wildlands Reveal Trailer – E3 2015 [Europe]
+          </p>
+          <p class="video-author">
+            Ubisoft &#10003;
+          </p>
+          <p class="video-stats">
+            17M views &#183; 10years ago
+          </p>
+        </div> 
+      </div>
+    </div>
+    <!--container ends here-->
+
+    <!--8 aws video Container-->
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-aws.avif">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-aws.jpg">
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+          WS In 5 Minutes | What Is AWS? | AWS Tutorial For Beginners | AWS Training | Simplilearn
+          </p>
+          <p class="video-author">
+            JoBie
+          </p>
+          <p class="video-stats">
+            39M views &#183; 9 months ago
+          </p>
+        </div> 
+      </div>
+    </div>
+    <!--container ends here-->
+
+    <!--9 goolge video Container-->
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-google.avif">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-google.jpg">
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+            Inside a Google data center
+          </p>
+          <p class="video-author">
+            Google WorkSpace &#10003;
+          </p>
+          <p class="video-stats">
+            2M views &#183; 11 months ago
+          </p>
+        </div> 
+      </div>
+    </div>
+    <!--container ends here-->
+
+    <!--10 tod video Container-->
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-tod.avif">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-tod.jpg">
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+          Total Overdose - Full Game Walkthrough
+          </p>
+          <p class="video-author">
+            Aplhayellow
+          </p>
+          <p class="video-stats">
+            9M views &#183; 9 months ago
+          </p>
+        </div> 
+      </div>
+    </div>
+    <!--container ends here-->
+
+    <!--11 Speed video Container-->
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-ishowspeed.avif">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-speed.jpg">
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+          iShowSpeed's First Day In China!
+          </p>
+          <p class="video-author">
+            Live Speedy &#10003;
+          </p>
+          <p class="video-stats">
+            2.8M views &#183; 4 months ago
+          </p>
+        </div> 
+      </div>
+    </div>
+    <!--container ends here-->
+
+    <!--12 red dead redemption video Container-->
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="video-thumbnail" src="/images/thumbnail-rdr2.avif">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="video-profile" src="/channelprofiles/profile-rdr2.jpg">
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+          Red Dead Redemption 2 Trailer
+          </p>
+          <p class="video-author">
+            Rockstar Games
+          </p>
+          <p class="video-stats">
+            39M views &#183; 10 years ago
+          </p>
+        </div> 
+      </div>
+    </div>
+    <!--container ends here-->
   </div>
-  <!--container ends here-->
-</div>
 
 
 </body>
