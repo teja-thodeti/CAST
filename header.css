@@ -1,15 +1,4 @@
-.search-bar{
-    flex:1;
-    height:35px;
-    padding-left:15px;
-    font-size:15px;
-    border-width:1px;
-    border-style:solid;
-    border-color:rgb(172, 170, 170);
-    border-radius:20px;
-    box-shadow:inset 1px 2px 3px rgb(150, 150, 150);
-    width:0;
-    }
+
 .search-bar::placeholder{
     font-family:Roboto,Arial;
     font-size:16px;
@@ -29,51 +18,63 @@
     border-bottom-color:rgb(180, 179, 179);
 
 }
+
 .left-section{
     display:flex;
     align-items:center;
 }
-
-.middle-section{
-    display:flex;
-    align-items:center;
-    flex:1;
-    margin-left:10px;
-    margin-right:35px;
-    max-width:400px;
-    align-items:center;
-
-}
-.search-icon{
-    height:25px;
-    margin-top:4px;
-    background-color:white;
-}
-
 
 .hamburger-menu{
     height:24px;
     margin-left:25px;
     margin-right:20px;
 }
-.youtube-logo{
-    height:20px;
+.cast-logo{
+    height: 50px;    
+}
+
+.middle-section{
+    display:flex;
+    align-items:center;
+    flex:1;
+    margin-right:35px;
+    max-width:400px;
+    align-items:center;
+
+}
+.search-bar{
+    flex:1;
+    height:35px;
+    font-size:15px;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(172, 170, 170);
+    border-radius:20px 0 0 20px;
+    box-shadow:inset 1px 2px 3px rgb(172, 170, 170);
+    width:0;
+    outline: none;
+    }
+.search-icon{
+    height:25px;
+    margin-top:4px;
+    background-color:white;
 }
 .search-button{
     height:40px;
     width:65px;
-    background-color:rgb(240, 240, 240);
+    background-color:white;
     border-width:1px;
     border-style:solid;
     border-color:white;
     margin-left:1px;
     margin-right:10px;
-    border-radius:20px;
+    border-radius:0 20px 20px 0;
+    box-shadow:inset 1px 2px 3px rgb(172, 170, 170);
 }
 .voice-button{
     height:40px;
     width:40px;
-    background-color:rgb(235, 233, 233);
+    background-color:rgb(255, 255, 255);
     border-width:1px;
     border-style:solid;
     border-color:rgb(255, 255, 255);
@@ -90,16 +91,34 @@
     flex-shrink:0;
 
 }
+.icon-mic{
+    height:30px;
+    background-color:rgb(246, 245, 245);
+    border-color:white;
+    border-radius:20px;
+}
 .upload-icon{
-    height:24px;
+    height:25px;
+    background-color:rgb(246, 245, 245);
+    border-color:white;
+    border-radius:20px;
+    margin-right:5px;
 } 
 .notification-icon{
-    height:24px;
+    height:25px;
+    background-color:rgb(246, 245, 245);
+    border-color:white;
+    border-radius:20px;
+    margin-right:10px;
 } 
 .apps-icon{
-    height:24px;
+    height:25px;
+    background-color:rgb(246, 245, 245);
+    border-color:white;
+    border-radius:20px;
+    margin-right:5px;
 } 
 .mychannel-icon{
-    height:25px;
+    height:35px;
     border-radius:17px
 } 
