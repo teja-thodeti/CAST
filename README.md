@@ -1,15 +1,12 @@
-# YouTube Clone (HTML + CSS)
+Note:This project is a prototype showcasing how different features like video comparison, AI summaries, and real-time chat could be integrated into one platform.
 
-A simple YouTube-inspired homepage built using only **HTML** and **CSS**.  
-Created as part of my web development practice.
+✅ Current Features:
+- Video comparison (two YouTube videos side by side)
+- Basic UI with sections for Chat, AI Summary, etc.
 
-## 🚀 Features
-- Basic header with logo and search bar
-- Responsive video grid layout
-- Minimal design for practice purposes
+🔜 Planned Features:
+- AI-powered video summaries
+- Real-time chat using WebSockets
+- Stream sync for watch-together experience
 
-## 📂 Project Structure
-youtube-clone/
-│── index.html # Main HTML file
-│── style.css # Styles for layout and design
-│── README.md # Project documentation
+- DEVELOPMENT STILL IN PROGRESS
