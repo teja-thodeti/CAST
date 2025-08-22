@@ -19,6 +19,7 @@
     }
 .thumbnail-row{
     margin-bottom:10px;
+    position:relative;
     }
 .video-author{
     font-size:12px;
@@ -39,3 +40,11 @@
     row-gap:10px;
 
      }
+.duration{
+    background-color:black;
+    color:white;
+    position:absolute;
+    bottom:8px;
+    right:5px;
+    font-family:'Roboto', Arial;
+}
