@@ -16,6 +16,7 @@
     border-bottom-width:1px;
     border-style:solid;
     border-bottom-color:rgb(180, 179, 179);
+    z-index:100;
 
 }
 
@@ -111,6 +112,23 @@
     border-radius:20px;
     margin-right:10px;
 } 
+.notification-icon-container{
+    position:relative;
+}
+.count{
+    position:absolute;
+    top:0;
+    right:4px;
+    background-color:red;
+    color:white;
+    font-family:'Roboto',Arial;
+    font-size:12px;
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:2px;
+    border-radius:10px;
+
+}
 .apps-icon{
     height:25px;
     background-color:rgb(246, 245, 245);
