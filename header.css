@@ -4,7 +4,8 @@
     font-size:16px;
 }
 .header{
-    height:55px;
+    margin:0;
+    height:56px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,6 +18,7 @@
     border-style:solid;
     border-bottom-color:rgb(180, 179, 179);
     z-index:100;
+    box-sizing: border-box;
 
 }
 
@@ -61,6 +63,7 @@
     background-color:white;
 }
 .search-button{
+    position:relative;
     height:40px;
     width:65px;
     background-color:white;
@@ -72,7 +75,39 @@
     border-radius:0 20px 20px 0;
     box-shadow:inset 1px 2px 3px rgb(172, 170, 170);
 }
+.search-button .tool-tip ,
+.voice-button .tool-tip ,
+.upload-button .tool-tip,
+.apps-button .tool-tip,
+.notification-button .tool-tip,
+.menu-button .tool-tip,
+.logo-button .tool-tip{
+    position:absolute;
+    background-color:grey;
+    color:white;
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius:10px;
+    font-size:small;
+    bottom:-30px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events:none; 
+}
+.search-button:hover .tool-tip , 
+.voice-button:hover .tool-tip ,
+.upload-button:hover .tool-tip ,
+.apps-button:hover .tool-tip ,
+.notification-button:hover .tool-tip,
+.menu-button:hover .tool-tip,
+.logo-button:hover .tool-tip{
+    opacity:1;
+    justify-items:center;
+} 
 .voice-button{
+    position:relative;
     height:40px;
     width:40px;
     background-color:rgb(255, 255, 255);
