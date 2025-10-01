@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CAST.com - Compare YouTube Videos</title>
+    <link rel="icon" type="png" href="icons/gfg.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <style>
+        .compare-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video-compare {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-compare iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+        }
+
+        .video-title-compare {
+            margin-top: 10px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .video-compare {
+                width: 100%;
+            }
+            .video-compare iframe {
+                height: 200px;
+            }
+        }
+
+        .input-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .input-container input {
+            padding: 5px;
+            width: 300px;
+        }
+
+        .input-container button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <div class="menu-button">
+                <img class="hamburger-menu" src="icons/icon-hamburger.png">
+                <div class="tool-tip">menu</div>
+            </div>
+            <div class="logo-button">
+                <img class="cast-logo" src="icons/icon-CAST.png">
+                <div class="tool-tip"> :) </div>
+            </div>
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="       What's on your mind!">
+            <button class="search-button">
+                <img class="search-icon" src="icons/icon-search.png">
+                <div class="tool-tip">search</div>
+            </button>
+            <div class="voice-button">
+                <img class="icon-mic" src="icons/icon-mic.png">
+                <div class="tool-tip">voice search</div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="upload-button">
+                <img class="upload-icon" src="icons/icon-upload.png">
+                <div class="tool-tip">upload</div>
+            </div>
+            <div class="apps-button">
+                <img class="apps-icon" src="icons/icon-apps.png">
+                <div class="tool-tip">apps</div>
+            </div>
+            <div class="notification-icon-container">
+                <div class="notification-button">
+                    <img class="notification-icon" src="icons/icon-notification.png">
+                    <div class="tool-tip">notifications</div>
+                </div>
+                <div class="count">3</div>
+            </div>
+            <img class="mychannel-icon" src="channelprofiles/profile-mychannel.jpg">
+        </div>
+    </header>
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img class="icon-sidebar" src="icons/icon-C.png">
+        </div>
+        <div class="sidebar-link">
+            <img class="icon-sidebar" src="icons/icon-A.png">
+        </div>
+        <div class="sidebar-link">
+            <a class="status" href="index.html">
+                <img class="icon-sidebar" src="icons/icon-S.png">
+            </a>
+        </div>
+        <div class="sidebar-link">
+            <img class="icon-sidebar" src="icons/icon-T.png">
+        </div>
+    </nav>
+    <main>
+        <h2 style="color:white; text-align:center; margin-top:20px;">Compare YouTube Videos</h2>
+
+        <div class="input-container">
+            <input type="text" id="yt1" placeholder="Enter first YouTube link">
+            <input type="text" id="yt2" placeholder="Enter second YouTube link">
+            <button onclick="loadVideos()">Compare!</button>
+        </div>
+
+        <div class="compare-container">
+            <div class="video-compare">
+                <iframe id="video1" src="" frameborder="0" allowfullscreen></iframe>
+                <p class="video-title-compare" id="title1">Video 1</p>
+            </div>
+            <div class="video-compare">
+                <iframe id="video2" src="" frameborder="0" allowfullscreen></iframe>
+                <p class="video-title-compare" id="title2">Video 2</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function getYouTubeEmbedURL(url) {
+            const videoID = url.split('v=')[1]?.split('&')[0] || url.split('/').pop();
+            return `https://www.youtube.com/embed/${videoID}`;
+        }
+
+        function loadVideos() {
+            const yt1 = document.getElementById('yt1').value;
+            const yt2 = document.getElementById('yt2').value;
+
+            document.getElementById('video1').src = getYouTubeEmbedURL(yt1);
+            document.getElementById('video2').src = getYouTubeEmbedURL(yt2);
+
+            document.getElementById('title1').innerText = yt1 ? "Video 1" : "Video 1 (No link)";
+            document.getElementById('title2').innerText = yt2 ? "Video 2" : "Video 2 (No link)";
+        }
+    </script>
+</body>
+
+</html>
